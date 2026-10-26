@@ -1,0 +1,56 @@
+Test Case ID,Test Scenario ID,Title,Pre-condition,Test Data,Steps,Expected Result,Actual Result,Status
+TC_01,TS_REG_01,??ng ký tài kho?n thành công v?i các thông tin h?p l? vào ??ng ý ?i?u kho?n Privacy Policy,?ang ? trang Register,"First Name: Nguyen, Last Name: Ngan, Email: Tester1@gmail.com, Password: mypassword",1. Nh?p thông tin vào ô First Name,H? th?ng chuy?n ??n trang thông báo tài kho?n ?ã ???c t?o thành công,"H? th?ng chuy?n ??n trang thông báo ""Your Account Has Been Created""",PASS
+,,,,,2. Nh?p thông tin vào ô Last Name,,,
+,,,,,3. Nh?p thông tin vào ô Email,,,
+,,,,,4. Nh?p thông tin vào ô Password,,,
+,,,,,5. Tick vào ô I have read and agree to the Privacy Policy,,,
+,,,,,"6. Nh?n nút ""Continue"" ?? ??ng ký tài kho?n.",,,
+TC_02,TS_REG_02,??ng ký tài kho?n không thành công v?i các thông tin h?p l? nh?ng không tích ch?n di?u kho?n Privacy Policy,?ang ? trang Register,"First Name: Nguyen, Last Name: Ngan, Email: Tester1@gmail.com, Password: mypassword",1. Nh?p thông tin vào ô First Name,H? th?ng không cho phép ??ng nh?p và thông báo ph?i tick vào Dòng I have read and agree to the Privacy Policy,H? th?ng không cho phép ??ng nh?p và thông báo ph?i tick vào Dòng I have read and agree to the Privacy Policy,PASS
+,,,,,2. Nh?p thông tin vào ô Last Name,,,
+,,,,,3. Nh?p thông tin vào ô Email,,,
+,,,,,4. Nh?p thông tin vào ô Password,,,
+,,,,,5. Không Tick vào ô I have read and agree to the Privacy Policy,,,
+,,,,,"6. Nh?n nút ""Continue"" ?? ??ng ký tài kho?n.",,,
+TC_03,TS_REG_03,??ng ký không thành công khi nh?p Email ?ã ???c ??ng ký tr??c ?ó trong h? th?ng,?ang ? trang Register,"First Name: Nguyen, Last Name: Ngan, Email: Tester1@gmail.com, Password: mypassword",1. Nh?p thông tin vào ô First Name,H? th?ng không cho phép ??ng nh?p và thông báo Email này ?ã t?n t?i,H? th?ng không cho phép ??ng nh?p và thông báo Email này ?ã t?n t?i,PASS
+,,,,,2. Nh?p thông tin vào ô Last Name,,,
+,,,,,3. Nh?p thông tin vào ô Email,,,
+,,,,,4. Nh?p thông tin vào ô Password,,,
+,,,,,5. Tick vào ô I have read and agree to the Privacy Policy,,,
+,,,,,"6. Nh?n nút ""Continue"" ?? ??ng ký tài kho?n.",,,
+TC_04,TS_REG_04,??ng ký không thành công khi b? tr?ng m?t trong các ô b?t bu?c,?ang ? trang Register,"First Name: Nguyen, Last Name: Ngan, Email: Tester1@gmail.com, Password: b? tr?ng",1. Nh?p thông tin vào ô First Name,H? th?ng không cho phép ??ng nh?p và thông báo ph?i nh?p password,H? th?ng không cho phép ??ng nh?p và thông báo ph?i nh?p password,PASS
+,,,,,2. Nh?p thông tin vào ô Last Name,,,
+,,,,,3. Nh?p thông tin vào ô Email,,,
+,,,,,4. B? tr?ng ô Password,,,
+,,,,,5. Tick vào ô I have read and agree to the Privacy Policy,,,
+,,,,,"6. Nh?n nút ""Continue"" ?? ??ng ký tài kho?n.",,,
+TC_05,TS_LOG_01,??ng nh?p thành công v?i Email và Password ?ã ??ng ký ,?ang ? trang Login,"Email: Tester1@gmail.com, Password: mypassword",1. Nh?p thông tin vào ô Email,H? th?ng cho phép ??ng nh?p thành công và chuy?n ??n trang ch?,H? th?ng cho phép ??ng nh?p thành công và chuy?n ??n trang Account,PASS
+,,,,,2. Nh?p thông tin vào ô Password,,,
+,,,,,"3. Nh?n nút ""Login""",,,
+TC_06,TS_LOG_02,??ng nh?p không thành công khi Email ch?a t?ng ???c ??ng ký trong h? th?ng,?ang ? trang Login,"Email: Tester05@gmail.com, Password: mypassword",1. Nh?p thông tin vào ô Email,H? th?ng không cho phép ??ng nh?p và hi?n th? thông báo email này ch?a ???c ??ng ký,H? th?ng không cho phép ??ng nh?p và hi?n th? thông báo email này ch?a ???c ??ng ký,PASS
+,,,,,2. Nh?p thông tin vào ô Password,,,
+,,,,,"3.Nh?n nút ""Login""",,,
+TC_07,TS_LOG_03,??ng nh?p không thành công khi nh?p sai Password so v?i Password ?ã ??ng ký,?ang ? trang Login,"Email: Tester1@gmail.com, Password: mypassword01",1. Nh?p thông tin vào ô Email,H? thông không cho phép ??ng nh?p và thông báo Password sai,H? thông không cho phép ??ng nh?p và thông báo Password sai,PASS
+,,,,,2. Nh?p thông tin vào ô Password,,,
+,,,,,"3.Nh?n nút ""Login""",,,
+TC_08,TS_LOG_04,??ng nh?p không thành công khi ?? tr?ng tr??ng E-mail Address,?ang ? trang Login,"Email: Tr?ng, Password: mypassword01",1. ?? tr?ng ô Email,H? th?ng không cho phép ??ng nh?p và thông báo ph?i nh?p Email,H? thông không cho phép ??ng nh?p và thông báo ph?i nh?p Email,PASS
+,,,,,2. Nh?p thông tin vào ô Password,,,
+,,,,,"3.Nh?n nút ""Login""",,,
+TC_09,TS_SRH_01,Tìm ki?m s?n ph?m thành công v?i t? khóa chính xác có t?n t?i trong h? th?ng(VD: Macbook),?ang ? trang ch?,T? khóa : Macbook,1. Nh?p ? ô Search t? khóa Macbook,H? th?ng hi?n th? ra danh sách các s?n ph?m thu?c Macbook,H? th?ng hi?n th? ra danh sách các s?n ph?m thu?c Macbook,PASS
+,,,,,"2. Nh?n nút ""Search""",,,
+TC_10,TS_SRH_02,Tìm ki?m s?n ph?m không thành công khi nh?p t? khóa không t?n t?i ,?ang ? trang ch?,T? khóa: avcdf,1. Nh?p ? ô Search t? khóa avcdf,H? th?ng không hi?n th? ra s?n ph?m và yêu c?u nh?p chính xác,H? th?ng không hi?n th? ra s?n ph?m và yêu c?u nh?p chính xác,PASS
+,,,,,"2. Nh?n nút ""Search""",,,
+TC_11,TS_SRH_03,Ki?m tra ph?n h?i c?a h? th?ng khi ?? tr?ng ô tìm ki?m và b?m nút Search,?ang ? trang ch?,T? khóa: ?? tr?ng,1. ?? tr?ng ô nh?p t? khóa,H? th?ng thông báo ph?i nh?p tên s?n ph?m,H? th?ng thông báo ph?i nh?p tên s?n ph?m,PASS
+,,,,,"2. Nh?n nút ""Search""",,,
+TC_12,TS_SRH_04,Ki?m tra tìm ki?m nâng cao theo danh m?c ,?ang ? trang ch?,T? khóa: Laptop,1. Nh?p ? ô Search t? khóa Laptop,H? th?ng hi?n th? ra các s?n ph?m thu?c m?c Laptop,H? th?ng hi?n th? ra các s?n ph?m thu?c m?c Laptop,PASS
+,,,,,"2. Nh?n nút ""Search""",,,
+TC_13,TS_CRT_01,Ki?m tra thêm s?n ph?m vào gi? hàng t? trang chi ti?t s?n ph?m,?ang ? trang Chi ti?t s?n ph?m,,1. Ch?n s? l??ng s?n ph?m,H? th?ng s? hi?n th? các s?n ph?m + s? l??ng ?ã thêm vào gi? hàng,H? th?ng s? hi?n th? các s?n ph?m + s? l??ng ?ã thêm vào gi? hàng,PASS
+,,,,,"2. Nh?n nút ""Add to cart""",,,
+,,,,,3. B?m vào icon gi? hàng ,,,
+TC_14,TS_CRT_03,Ki?m tra thao tác xóa s?n ph?m thành công ? trang gi? hàng,?ang ? trang Gi? hàng,,1. Quan sát icon Remove ? m?i s?n ph?m,H? th?ng s? xóa s?n ph?m và reset l?i gi? hàng,H? th?ng s? xóa s?n ph?m và reset l?i gi? hàng,PASS
+,,,,,2. Click chu?t vào icon Remove,,,
+TC_15,TS_CHK_01,Ki?m tra hoàn t?t quy trình thanh toán thành công v?i tài kho?n ?ã ??ng nh?p (End-To-End flow),?ang ? trang  Check out,"First Name Ngan, Last Name: nguyen, Address: 112 nam cao, city : Da Nang, Post Code: 1234, Country : Viet Nam, Region/State: Hoa Khanh, ",1. ?i?n t?t c? thông tin,H? th?ng thông báo ?ã ??t hàng thành công,H? th?ng thông báo ?ã ??t hàng thành công,PASS
+,,,,,2. Ch?n ph??ng th?c thanh toán,,,
+,,,,,"3. Nh?n nút ""Continue""",,,
+TC_16,TS_CHK_02,"Ki?m tra ph?n h?i c?a h? th?ng khi ng??i dùng không nh?p các tr??ng b?t bu?c ( address,city,first_name,...)",?ang ? trang  Check out,"First Name: b? tr?ng, Last Name: nguyen, Address: 112 nam cao, city : Da Nang, Post Code: 1234, Country : Viet Nam, Region/State: Hoa Khanh, ",1. ?i?n t?t c? thông tin b? tr?ng ô First Name,H? th?nng không ti?p t?c và báo l?i yêu c?u nh?p First Name,H? th?ng c?nh báo yêu c?u nh?p First Name,PASS
+,,,,,2. Ch?n ph??ng th?c thanh toán,,,
+,,,,,"3. Nh?n nút ""Continue""",,,
